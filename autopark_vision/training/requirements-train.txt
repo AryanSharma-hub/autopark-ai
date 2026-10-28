@@ -1,0 +1,5 @@
+# Training only. Inference needs just requirements.txt (onnxruntime).
+# CPU wheels: pip install -r training/requirements-train.txt --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple
+torch>=2.4
+torchvision>=0.19
+onnx>=1.16

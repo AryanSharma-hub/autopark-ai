@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "layout_name": "cardboard_lot_5_slots_placeholder",
+  "placeholder": false,
+  "reference_resolution": {
+    "width": 331,
+    "height": 153
+  },
+  "aspect_ratio_tolerance": 0.15,
+  "slots": [
+    {
+      "id": "S1",
+      "x": 0.04,
+      "y": 0.3,
+      "w": 0.16,
+      "h": 0.45
+    },
+    {
+      "id": "S2",
+      "x": 0.23,
+      "y": 0.3,
+      "w": 0.16,
+      "h": 0.45
+    },
+    {
+      "id": "S3",
+      "x": 0.42,
+      "y": 0.3,
+      "w": 0.16,
+      "h": 0.45
+    },
+    {
+      "id": "S4",
+      "x": 0.61,
+      "y": 0.3,
+      "w": 0.16,
+      "h": 0.45
+    },
+    {
+      "id": "S5",
+      "x": 0.8,
+      "y": 0.3,
+      "w": 0.16,
+      "h": 0.45
+    }
+  ]
+}

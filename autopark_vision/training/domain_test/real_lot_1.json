@@ -1,0 +1,20 @@
+{
+  "image": "sample_images/real_lot_1.png",
+  "note": "Hand-labelled slots of a top-down photo. Held out: never used for training.",
+  "slots": [
+    {"box": [97, 3, 59, 130], "label": "occupied"},
+    {"box": [162, 3, 58, 130], "label": "empty"},
+    {"box": [226, 3, 58, 130], "label": "occupied"},
+    {"box": [290, 3, 58, 130], "label": "occupied"},
+    {"box": [354, 3, 59, 130], "label": "empty"},
+    {"box": [419, 3, 58, 130], "label": "occupied"},
+    {"box": [483, 3, 62, 130], "label": "occupied"},
+    {"box": [97, 156, 59, 141], "label": "occupied"},
+    {"box": [162, 156, 58, 141], "label": "empty"},
+    {"box": [226, 156, 58, 141], "label": "empty"},
+    {"box": [290, 156, 58, 141], "label": "occupied"},
+    {"box": [354, 156, 59, 141], "label": "occupied"},
+    {"box": [419, 156, 58, 141], "label": "occupied"},
+    {"box": [483, 156, 62, 141], "label": "occupied"}
+  ]
+}

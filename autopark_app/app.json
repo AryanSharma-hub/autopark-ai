@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "AutoPark AI",
+    "slug": "autopark-ai",
+    "scheme": "autopark",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.autopark.ai",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Take a photo of the parking lot to find free slots.",
+        "NSPhotoLibraryUsageDescription": "Choose a photo of the parking lot to find free slots.",
+        "NSLocalNetworkUsageDescription": "Talk to the AutoPark rover over its Wi-Fi network (ESP32-Robot, 192.168.4.1).",
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true,
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.autopark.ai",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-asset",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a photo of the parking lot to find free slots.",
+          "cameraPermission": "Take a photo of the parking lot to find free slots."
+        }
+      ]
+    ],
+    "owner": "aryan-2006",
+    "extra": {
+      "eas": {
+        "projectId": "0d7dd536-5768-46fa-83b5-5f3e4dfcfa89"
+      }
+    }
+  }
+}

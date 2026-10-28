@@ -1,0 +1,157 @@
+{
+  "architecture": "mobilenet_v3_small",
+  "version": "202610262007",
+  "labels": [
+    "empty",
+    "occupied"
+  ],
+  "input_size": 96,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "resize": "squash",
+  "color_order": "RGB",
+  "temperature": 0.5901,
+  "uncertain_threshold": 0.9875,
+  "threshold_rule": "lowest calibrated probability with precision >= 0.995 for both classes on the validation split",
+  "training": {
+    "datasets": {
+      "syn": "procedural top-down lots (training/synth_topview.py)",
+      "carpk": "CARPK drone images (Hsieh et al., ICCV 2017): GF1+GF2 train, NTU valid, TPZ test",
+      "extra": []
+    },
+    "patch_counts": {
+      "train": {
+        "carpk_empty": 6411,
+        "carpk_occupied": 5693,
+        "syn_empty": 3277,
+        "syn_occupied": 3522
+      },
+      "valid": {
+        "carpk_empty": 2865,
+        "carpk_occupied": 2280,
+        "syn_empty": 611,
+        "syn_occupied": 683
+      },
+      "test": {
+        "carpk_empty": 3426,
+        "carpk_occupied": 3013,
+        "syn_empty": 613,
+        "syn_occupied": 702
+      }
+    },
+    "epochs": 4,
+    "best_epoch": 4,
+    "seed": 0
+  },
+  "metrics": {
+    "valid": {
+      "all": {
+        "n": 6439,
+        "accuracy_no_abstain": 0.9932,
+        "coverage": 0.946,
+        "errors_when_decided": 14,
+        "empty": {
+          "precision": 1.0,
+          "recall": 0.9353,
+          "support": 3476
+        },
+        "occupied": {
+          "precision": 0.9951,
+          "recall": 0.9538,
+          "support": 2963
+        }
+      },
+      "carpk": {
+        "n": 5145,
+        "accuracy_no_abstain": 0.9944,
+        "coverage": 0.9512,
+        "errors_when_decided": 8,
+        "empty": {
+          "precision": 1.0,
+          "recall": 0.9295,
+          "support": 2865
+        },
+        "occupied": {
+          "precision": 0.9964,
+          "recall": 0.975,
+          "support": 2280
+        }
+      },
+      "syn": {
+        "n": 1294,
+        "accuracy_no_abstain": 0.9884,
+        "coverage": 0.925,
+        "errors_when_decided": 6,
+        "empty": {
+          "precision": 1.0,
+          "recall": 0.9624,
+          "support": 611
+        },
+        "occupied": {
+          "precision": 0.9901,
+          "recall": 0.8829,
+          "support": 683
+        }
+      }
+    },
+    "test": {
+      "all": {
+        "n": 7754,
+        "accuracy_no_abstain": 0.9805,
+        "coverage": 0.9279,
+        "errors_when_decided": 19,
+        "empty": {
+          "precision": 0.9994,
+          "recall": 0.8891,
+          "support": 4039
+        },
+        "occupied": {
+          "precision": 0.9953,
+          "recall": 0.965,
+          "support": 3715
+        }
+      },
+      "carpk": {
+        "n": 6439,
+        "accuracy_no_abstain": 0.979,
+        "coverage": 0.9267,
+        "errors_when_decided": 14,
+        "empty": {
+          "precision": 0.9997,
+          "recall": 0.8751,
+          "support": 3426
+        },
+        "occupied": {
+          "precision": 0.9956,
+          "recall": 0.9808,
+          "support": 3013
+        }
+      },
+      "syn": {
+        "n": 1315,
+        "accuracy_no_abstain": 0.9878,
+        "coverage": 0.9338,
+        "errors_when_decided": 5,
+        "empty": {
+          "precision": 0.9983,
+          "recall": 0.9674,
+          "support": 613
+        },
+        "occupied": {
+          "precision": 0.9937,
+          "recall": 0.8974,
+          "support": 702
+        }
+      }
+    }
+  },
+  "note": "Metrics are on synthetic scenes and on an unseen real lot (CARPK TPZ). They do not guarantee accuracy on a different camera or lot; validate on your own images."
+}

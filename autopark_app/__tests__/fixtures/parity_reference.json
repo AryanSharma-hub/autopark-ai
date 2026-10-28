@@ -1,0 +1,1590 @@
+{
+ "generator": "autopark_app/tools/parity/make_reference.py",
+ "opencv": "5.0.0",
+ "numpy": "2.5.3",
+ "model": "mobilenet_v3_small@202610262007",
+ "temperature": 0.5901,
+ "threshold": 0.9875,
+ "cases": [
+  {
+   "image": "real_lot_1.png",
+   "config": "roi_config",
+   "width": 548,
+   "height": 300,
+   "compatible": false,
+   "warnings": [
+    "Image aspect ratio 1.83 differs from the ROI layout's 2.16 (331x153) by 16%. The camera viewpoint probably does not match the configured slots; results may be misleading. Re-align the ROIs for this image."
+   ],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 22,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "EMPTY",
+     "confidence": 0.9976,
+     "p_occupied": 0.0024430385336102808
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 126,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.7779,
+     "p_occupied": 0.22213507022052506
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 230,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9956,
+     "p_occupied": 0.9956011365020259
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 334,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.7348,
+     "p_occupied": 0.7347779207467481
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 438,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9958,
+     "p_occupied": 0.9957948535817929
+    }
+   ],
+   "empty_slot_ids": [
+    "S1"
+   ],
+   "first_crop_tensor_sha256": "beead1dd2abf1fc3449d91ea1ab1457848e81a3b65baf46734c0519c41978976",
+   "first_crop_tensor_head": [
+    0.5193082094192505,
+    0.5364329218864441,
+    0.5535576939582825,
+    0.46793392300605774,
+    0.3823101818561554,
+    0.4165596663951874,
+    0.5021834373474121,
+    0.5535576939582825
+   ],
+   "decoded_sha256": "ea89cb6cd35177094c15dee50c76c7f62c0fbd7292c53bee7b0adb7b8037f26a"
+  },
+  {
+   "image": "real_lot_1.png",
+   "config": "roi_real_lot_1",
+   "width": 548,
+   "height": 300,
+   "compatible": true,
+   "warnings": [],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 97,
+      "y": 3,
+      "w": 59,
+      "h": 130
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9987,
+     "p_occupied": 0.998729829222974
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 162,
+      "y": 3,
+      "w": 58,
+      "h": 130
+     },
+     "status": "EMPTY",
+     "confidence": 0.9987,
+     "p_occupied": 0.001319003753555079
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 226,
+      "y": 3,
+      "w": 58,
+      "h": 130
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9969,
+     "p_occupied": 0.9969283334013628
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 290,
+      "y": 3,
+      "w": 58,
+      "h": 130
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9976,
+     "p_occupied": 0.9976487393362469
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 354,
+      "y": 3,
+      "w": 59,
+      "h": 130
+     },
+     "status": "EMPTY",
+     "confidence": 0.9975,
+     "p_occupied": 0.002460879608499793
+    }
+   ],
+   "empty_slot_ids": [
+    "S2",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "1a0d7bd390a2b1ae8ba7c8982a5bd090e893fc2024ace32c19fff06cd72a08e5",
+   "first_crop_tensor_head": [
+    0.17681314051151276,
+    0.17681314051151276,
+    0.17681314051151276,
+    0.14256364107131958,
+    0.1254388839006424,
+    0.07406462728977203,
+    0.07406462728977203,
+    0.07406462728977203
+   ],
+   "decoded_sha256": "ea89cb6cd35177094c15dee50c76c7f62c0fbd7292c53bee7b0adb7b8037f26a"
+  },
+  {
+   "image": "synthetic_lot_S1_S3_S5_occupied.png",
+   "config": "roi_config",
+   "width": 1280,
+   "height": 720,
+   "compatible": false,
+   "warnings": [
+    "Image aspect ratio 1.78 differs from the ROI layout's 2.16 (331x153) by 18%. The camera viewpoint probably does not match the configured slots; results may be misleading. Re-align the ROIs for this image."
+   ],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 51,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9043,
+     "p_occupied": 0.9043034219612641
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 294,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.9981,
+     "p_occupied": 0.0019356228514927957
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 538,
+      "y": 216,
+      "w": 204,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.8956,
+     "p_occupied": 0.8956370148890122
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 781,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.9979,
+     "p_occupied": 0.002091553797871419
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 1024,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.8955,
+     "p_occupied": 0.8954908956059032
+    }
+   ],
+   "empty_slot_ids": [
+    "S2",
+    "S4"
+   ],
+   "first_crop_tensor_sha256": "7fd5a1b87bfed8e975889e69d4c295d0cdf7e554864b1129d70cf154af0296dc",
+   "first_crop_tensor_head": [
+    -0.5766761302947998,
+    -0.5766761302947998,
+    -0.5253018736839294,
+    -0.5081771016120911,
+    -0.4739275872707367,
+    -0.4739275872707367,
+    -0.5595513582229614,
+    -0.5081771016120911
+   ],
+   "decoded_sha256": "e560782d29a04e34871df380e472c07c147d717f5bce241db8bde123e8251b01"
+  },
+  {
+   "image": "synthetic_lot_S1_S3_S5_occupied.png",
+   "config": "roi_real_lot_1",
+   "width": 1280,
+   "height": 720,
+   "compatible": true,
+   "warnings": [],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 227,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9976,
+     "p_occupied": 0.0024472313179315607
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 378,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9984,
+     "p_occupied": 0.001610835904822741
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 528,
+      "y": 7,
+      "w": 135,
+      "h": 312
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9862,
+     "p_occupied": 0.013836683928840882
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 677,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9941,
+     "p_occupied": 0.0058988399259212575
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 827,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9983,
+     "p_occupied": 0.001683624611902999
+    }
+   ],
+   "empty_slot_ids": [
+    "S1",
+    "S2",
+    "S4",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "b67c20d0e51bdcd3191514d25f3e4509f62c530b0b319e50f58207ac7bf632bb",
+   "first_crop_tensor_head": [
+    -0.4396780729293823,
+    -0.4568028450012207,
+    -0.4910523295402527,
+    -0.6280503869056702,
+    -0.5081771016120911,
+    -0.5081771016120911,
+    -0.4568028450012207,
+    -0.35405433177948
+   ],
+   "decoded_sha256": "e560782d29a04e34871df380e472c07c147d717f5bce241db8bde123e8251b01"
+  },
+  {
+   "image": "synthetic_lot_S1_occupied.png",
+   "config": "roi_config",
+   "width": 1280,
+   "height": 720,
+   "compatible": false,
+   "warnings": [
+    "Image aspect ratio 1.78 differs from the ROI layout's 2.16 (331x153) by 18%. The camera viewpoint probably does not match the configured slots; results may be misleading. Re-align the ROIs for this image."
+   ],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 51,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9043,
+     "p_occupied": 0.9043034219612641
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 294,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.9981,
+     "p_occupied": 0.0019356228514927957
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 538,
+      "y": 216,
+      "w": 204,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.998,
+     "p_occupied": 0.0019852592938990835
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 781,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.9979,
+     "p_occupied": 0.002091553797871419
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 1024,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.998,
+     "p_occupied": 0.0019666865721889594
+    }
+   ],
+   "empty_slot_ids": [
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "7fd5a1b87bfed8e975889e69d4c295d0cdf7e554864b1129d70cf154af0296dc",
+   "first_crop_tensor_head": [
+    -0.5766761302947998,
+    -0.5766761302947998,
+    -0.5253018736839294,
+    -0.5081771016120911,
+    -0.4739275872707367,
+    -0.4739275872707367,
+    -0.5595513582229614,
+    -0.5081771016120911
+   ],
+   "decoded_sha256": "20f7b4da8fca096f5e297d7780733135a8974a6b2eadf14ffaf055eeb8d8ec3c"
+  },
+  {
+   "image": "synthetic_lot_S1_occupied.png",
+   "config": "roi_real_lot_1",
+   "width": 1280,
+   "height": 720,
+   "compatible": true,
+   "warnings": [],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 227,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9976,
+     "p_occupied": 0.0024472313179315607
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 378,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9984,
+     "p_occupied": 0.001610835904822741
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 528,
+      "y": 7,
+      "w": 135,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9981,
+     "p_occupied": 0.0019439969230013636
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 677,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9981,
+     "p_occupied": 0.0018808581746129858
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 827,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9983,
+     "p_occupied": 0.001683624611902999
+    }
+   ],
+   "empty_slot_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "b67c20d0e51bdcd3191514d25f3e4509f62c530b0b319e50f58207ac7bf632bb",
+   "first_crop_tensor_head": [
+    -0.4396780729293823,
+    -0.4568028450012207,
+    -0.4910523295402527,
+    -0.6280503869056702,
+    -0.5081771016120911,
+    -0.5081771016120911,
+    -0.4568028450012207,
+    -0.35405433177948
+   ],
+   "decoded_sha256": "20f7b4da8fca096f5e297d7780733135a8974a6b2eadf14ffaf055eeb8d8ec3c"
+  },
+  {
+   "image": "synthetic_lot_S2_S4_occupied.png",
+   "config": "roi_config",
+   "width": 1280,
+   "height": 720,
+   "compatible": false,
+   "warnings": [
+    "Image aspect ratio 1.78 differs from the ROI layout's 2.16 (331x153) by 18%. The camera viewpoint probably does not match the configured slots; results may be misleading. Re-align the ROIs for this image."
+   ],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 51,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.9979,
+     "p_occupied": 0.0020703699061947324
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 294,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9077,
+     "p_occupied": 0.9076863412108478
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 538,
+      "y": 216,
+      "w": 204,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.998,
+     "p_occupied": 0.0019852592938990835
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 781,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9025,
+     "p_occupied": 0.9024648305676016
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 1024,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.998,
+     "p_occupied": 0.0019666865721889594
+    }
+   ],
+   "empty_slot_ids": [
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "80e5938fa4a0580e22dc780e062b62fb05ff22f5ab843ea7cacdcc269eb09237",
+   "first_crop_tensor_head": [
+    -0.5766761302947998,
+    -0.5766761302947998,
+    -0.5253018736839294,
+    -0.5081771016120911,
+    -0.4739275872707367,
+    -0.4739275872707367,
+    -0.5595513582229614,
+    -0.5081771016120911
+   ],
+   "decoded_sha256": "1a285a5477f850ab9471dde676f439dd996945db86f0748d9a414aaa2de44f0f"
+  },
+  {
+   "image": "synthetic_lot_S2_S4_occupied.png",
+   "config": "roi_real_lot_1",
+   "width": 1280,
+   "height": 720,
+   "compatible": true,
+   "warnings": [],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 227,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9909,
+     "p_occupied": 0.009117061685049103
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 378,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9824,
+     "p_occupied": 0.01760170187389394
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 528,
+      "y": 7,
+      "w": 135,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9981,
+     "p_occupied": 0.0019439969230013636
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 677,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9977,
+     "p_occupied": 0.0023160357614604803
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 827,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9966,
+     "p_occupied": 0.003361356047325977
+    }
+   ],
+   "empty_slot_ids": [
+    "S1",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "2b4ec7dfa4291cb8350dd89725a6d351c6bc377d707aaba1cedc8cfc352efda3",
+   "first_crop_tensor_head": [
+    -0.4396780729293823,
+    -0.4568028450012207,
+    -0.4910523295402527,
+    -0.6280503869056702,
+    -0.5081771016120911,
+    -0.5081771016120911,
+    -0.4568028450012207,
+    -0.35405433177948
+   ],
+   "decoded_sha256": "1a285a5477f850ab9471dde676f439dd996945db86f0748d9a414aaa2de44f0f"
+  },
+  {
+   "image": "synthetic_lot_all_empty.png",
+   "config": "roi_config",
+   "width": 1280,
+   "height": 720,
+   "compatible": false,
+   "warnings": [
+    "Image aspect ratio 1.78 differs from the ROI layout's 2.16 (331x153) by 18%. The camera viewpoint probably does not match the configured slots; results may be misleading. Re-align the ROIs for this image."
+   ],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 51,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.9979,
+     "p_occupied": 0.0020703699061947324
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 294,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.9981,
+     "p_occupied": 0.0019356228514927957
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 538,
+      "y": 216,
+      "w": 204,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.998,
+     "p_occupied": 0.0019852592938990835
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 781,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.9979,
+     "p_occupied": 0.002091553797871419
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 1024,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.998,
+     "p_occupied": 0.0019666865721889594
+    }
+   ],
+   "empty_slot_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "80e5938fa4a0580e22dc780e062b62fb05ff22f5ab843ea7cacdcc269eb09237",
+   "first_crop_tensor_head": [
+    -0.5766761302947998,
+    -0.5766761302947998,
+    -0.5253018736839294,
+    -0.5081771016120911,
+    -0.4739275872707367,
+    -0.4739275872707367,
+    -0.5595513582229614,
+    -0.5081771016120911
+   ],
+   "decoded_sha256": "a4c7ed2376f4cbc0af0a2940078daa60f4ac5323afc5d9fb6274eb10b6f3ef05"
+  },
+  {
+   "image": "synthetic_lot_all_empty.png",
+   "config": "roi_real_lot_1",
+   "width": 1280,
+   "height": 720,
+   "compatible": true,
+   "warnings": [],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 227,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9979,
+     "p_occupied": 0.002144310844534597
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 378,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9984,
+     "p_occupied": 0.001610835904822741
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 528,
+      "y": 7,
+      "w": 135,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9981,
+     "p_occupied": 0.0019439969230013636
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 677,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9981,
+     "p_occupied": 0.0018808581746129858
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 827,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9983,
+     "p_occupied": 0.001683624611902999
+    }
+   ],
+   "empty_slot_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "65d28f90354cdf4b3745bb37d61277d7929597d7d9989f4efa8c77ccbb514ba0",
+   "first_crop_tensor_head": [
+    -0.4396780729293823,
+    -0.4568028450012207,
+    -0.4910523295402527,
+    -0.6280503869056702,
+    -0.5081771016120911,
+    -0.5081771016120911,
+    -0.4568028450012207,
+    -0.35405433177948
+   ],
+   "decoded_sha256": "a4c7ed2376f4cbc0af0a2940078daa60f4ac5323afc5d9fb6274eb10b6f3ef05"
+  },
+  {
+   "image": "synthetic_lot_all_occupied.png",
+   "config": "roi_config",
+   "width": 1280,
+   "height": 720,
+   "compatible": false,
+   "warnings": [
+    "Image aspect ratio 1.78 differs from the ROI layout's 2.16 (331x153) by 18%. The camera viewpoint probably does not match the configured slots; results may be misleading. Re-align the ROIs for this image."
+   ],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 51,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9043,
+     "p_occupied": 0.9043034219612641
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 294,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9077,
+     "p_occupied": 0.9076863412108478
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 538,
+      "y": 216,
+      "w": 204,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.8956,
+     "p_occupied": 0.8956370148890122
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 781,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9025,
+     "p_occupied": 0.9024648305676016
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 1024,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.8955,
+     "p_occupied": 0.8954908956059032
+    }
+   ],
+   "empty_slot_ids": [],
+   "first_crop_tensor_sha256": "7fd5a1b87bfed8e975889e69d4c295d0cdf7e554864b1129d70cf154af0296dc",
+   "first_crop_tensor_head": [
+    -0.5766761302947998,
+    -0.5766761302947998,
+    -0.5253018736839294,
+    -0.5081771016120911,
+    -0.4739275872707367,
+    -0.4739275872707367,
+    -0.5595513582229614,
+    -0.5081771016120911
+   ],
+   "decoded_sha256": "b167baf65ed63bcb08e4e9e0ed73e9fe21073d3d33790c594d2ac770691e41c3"
+  },
+  {
+   "image": "synthetic_lot_all_occupied.png",
+   "config": "roi_real_lot_1",
+   "width": 1280,
+   "height": 720,
+   "compatible": true,
+   "warnings": [],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 227,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.991,
+     "p_occupied": 0.009020343337319265
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 378,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9824,
+     "p_occupied": 0.01760170187389394
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 528,
+      "y": 7,
+      "w": 135,
+      "h": 312
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9862,
+     "p_occupied": 0.013836683928840882
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 677,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9932,
+     "p_occupied": 0.006828849715081984
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 827,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9966,
+     "p_occupied": 0.003361356047325977
+    }
+   ],
+   "empty_slot_ids": [
+    "S1",
+    "S4",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "2f3453838b32b61d1ab50a21aca8ab8ffe34c028e9d024f2cde9ea6e70e079a5",
+   "first_crop_tensor_head": [
+    -0.4396780729293823,
+    -0.4568028450012207,
+    -0.4910523295402527,
+    -0.6280503869056702,
+    -0.5081771016120911,
+    -0.5081771016120911,
+    -0.4568028450012207,
+    -0.35405433177948
+   ],
+   "decoded_sha256": "b167baf65ed63bcb08e4e9e0ed73e9fe21073d3d33790c594d2ac770691e41c3"
+  },
+  {
+   "image": "real_lot_1_q90.jpg",
+   "config": "roi_config",
+   "width": 548,
+   "height": 300,
+   "compatible": false,
+   "warnings": [
+    "Image aspect ratio 1.83 differs from the ROI layout's 2.16 (331x153) by 16%. The camera viewpoint probably does not match the configured slots; results may be misleading. Re-align the ROIs for this image."
+   ],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 22,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "EMPTY",
+     "confidence": 0.9975,
+     "p_occupied": 0.002493764575652381
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 126,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.7694,
+     "p_occupied": 0.23059182427386168
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 230,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9954,
+     "p_occupied": 0.9953895851838155
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 334,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.773,
+     "p_occupied": 0.7729763233654857
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 438,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9963,
+     "p_occupied": 0.996333381657953
+    }
+   ],
+   "empty_slot_ids": [
+    "S1"
+   ],
+   "first_crop_tensor_sha256": "76bd57af6145095da51176c8918b191aae7109c3b96211917de28ff3662a6789",
+   "first_crop_tensor_head": [
+    0.5193082094192505,
+    0.5193082094192505,
+    0.5535576939582825,
+    0.46793392300605774,
+    0.3823101818561554,
+    0.4165596663951874,
+    0.5021834373474121,
+    0.5535576939582825
+   ],
+   "decoded_sha256": "891164765c9b5763b0795cbbd8e308ace8a6672138b4892c01fccb74d1d0754f"
+  },
+  {
+   "image": "real_lot_1_q90.jpg",
+   "config": "roi_real_lot_1",
+   "width": 548,
+   "height": 300,
+   "compatible": true,
+   "warnings": [],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 97,
+      "y": 3,
+      "w": 59,
+      "h": 130
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9988,
+     "p_occupied": 0.9987712521471731
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 162,
+      "y": 3,
+      "w": 58,
+      "h": 130
+     },
+     "status": "EMPTY",
+     "confidence": 0.9987,
+     "p_occupied": 0.0013262331208257505
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 226,
+      "y": 3,
+      "w": 58,
+      "h": 130
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9971,
+     "p_occupied": 0.9971085106094256
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 290,
+      "y": 3,
+      "w": 58,
+      "h": 130
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9977,
+     "p_occupied": 0.9976908243164316
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 354,
+      "y": 3,
+      "w": 59,
+      "h": 130
+     },
+     "status": "EMPTY",
+     "confidence": 0.9976,
+     "p_occupied": 0.0023658049551402655
+    }
+   ],
+   "empty_slot_ids": [
+    "S2",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "22a759610710b240bb7de20aece9875aaa4f21bce878fccbabf842bcaaf415ce",
+   "first_crop_tensor_head": [
+    0.17681314051151276,
+    0.15968838334083557,
+    0.14256364107131958,
+    0.1083141341805458,
+    0.09118937700986862,
+    0.07406462728977203,
+    0.07406462728977203,
+    0.09118937700986862
+   ],
+   "decoded_sha256": "891164765c9b5763b0795cbbd8e308ace8a6672138b4892c01fccb74d1d0754f"
+  },
+  {
+   "image": "synthetic_lot_S2_S4_occupied_q92.jpg",
+   "config": "roi_config",
+   "width": 1280,
+   "height": 720,
+   "compatible": false,
+   "warnings": [
+    "Image aspect ratio 1.78 differs from the ROI layout's 2.16 (331x153) by 18%. The camera viewpoint probably does not match the configured slots; results may be misleading. Re-align the ROIs for this image."
+   ],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 51,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.9979,
+     "p_occupied": 0.002057097680147948
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 294,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9034,
+     "p_occupied": 0.9033509092369685
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 538,
+      "y": 216,
+      "w": 204,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.998,
+     "p_occupied": 0.0020005793765808795
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 781,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9048,
+     "p_occupied": 0.9047656888196334
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 1024,
+      "y": 216,
+      "w": 205,
+      "h": 324
+     },
+     "status": "EMPTY",
+     "confidence": 0.998,
+     "p_occupied": 0.001995336380485087
+    }
+   ],
+   "empty_slot_ids": [
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "fa247233e69c6aba1c66d8f1aaea1839b3e6f2c6af57a730c23443af8313b8ce",
+   "first_crop_tensor_head": [
+    -0.5938008427619934,
+    -0.5766761302947998,
+    -0.542426586151123,
+    -0.5081771016120911,
+    -0.4739275872707367,
+    -0.4739275872707367,
+    -0.542426586151123,
+    -0.4910523295402527
+   ],
+   "decoded_sha256": "5eb09b610b06c5648b727b229ef951e9cc1f0414421e17c8bb1d701332eb193c"
+  },
+  {
+   "image": "synthetic_lot_S2_S4_occupied_q92.jpg",
+   "config": "roi_real_lot_1",
+   "width": 1280,
+   "height": 720,
+   "compatible": true,
+   "warnings": [],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 227,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9906,
+     "p_occupied": 0.009389793485139667
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 378,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.9821,
+     "p_occupied": 0.017855008156233147
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 528,
+      "y": 7,
+      "w": 135,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9981,
+     "p_occupied": 0.001931736941115333
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 677,
+      "y": 7,
+      "w": 136,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9974,
+     "p_occupied": 0.002563266203474122
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 827,
+      "y": 7,
+      "w": 138,
+      "h": 312
+     },
+     "status": "EMPTY",
+     "confidence": 0.9965,
+     "p_occupied": 0.003468833279040509
+    }
+   ],
+   "empty_slot_ids": [
+    "S1",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "d95bff88318d245ba77024e2eae4dead212bc6253ac03064fb8c8267819df12a",
+   "first_crop_tensor_head": [
+    -0.4396780729293823,
+    -0.4396780729293823,
+    -0.5253018736839294,
+    -0.6280503869056702,
+    -0.4910523295402527,
+    -0.5253018736839294,
+    -0.4568028450012207,
+    -0.35405433177948
+   ],
+   "decoded_sha256": "5eb09b610b06c5648b727b229ef951e9cc1f0414421e17c8bb1d701332eb193c"
+  },
+  {
+   "image": "real_lot_1_exif6.jpg",
+   "config": "roi_config",
+   "width": 548,
+   "height": 300,
+   "compatible": false,
+   "warnings": [
+    "Image aspect ratio 1.83 differs from the ROI layout's 2.16 (331x153) by 16%. The camera viewpoint probably does not match the configured slots; results may be misleading. Re-align the ROIs for this image."
+   ],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 22,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "EMPTY",
+     "confidence": 0.9975,
+     "p_occupied": 0.002485123592530179
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 126,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.7425,
+     "p_occupied": 0.25753819339199563
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 230,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.995,
+     "p_occupied": 0.9949599150134533
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 334,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "UNCERTAIN",
+     "confidence": 0.716,
+     "p_occupied": 0.7159978659518021
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 438,
+      "y": 90,
+      "w": 88,
+      "h": 135
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9956,
+     "p_occupied": 0.9956159441181495
+    }
+   ],
+   "empty_slot_ids": [
+    "S1"
+   ],
+   "first_crop_tensor_sha256": "5bce674ab0f15dba43a3d06a8aa94f36745ab04c6f0e214b7061291e9d9e433e",
+   "first_crop_tensor_head": [
+    0.5535576939582825,
+    0.5535576939582825,
+    0.5878071784973145,
+    0.45080918073654175,
+    0.3823101818561554,
+    0.43368443846702576,
+    0.5193082094192505,
+    0.5706824660301208
+   ],
+   "decoded_sha256": "64b5eca1de150d706bae6fcadcbb4a4b8851fdd2a508193290df065c17eed7b7"
+  },
+  {
+   "image": "real_lot_1_exif6.jpg",
+   "config": "roi_real_lot_1",
+   "width": 548,
+   "height": 300,
+   "compatible": true,
+   "warnings": [],
+   "slots": [
+    {
+     "slot_id": "S1",
+     "pixels": {
+      "x": 97,
+      "y": 3,
+      "w": 59,
+      "h": 130
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9987,
+     "p_occupied": 0.9987080803913755
+    },
+    {
+     "slot_id": "S2",
+     "pixels": {
+      "x": 162,
+      "y": 3,
+      "w": 58,
+      "h": 130
+     },
+     "status": "EMPTY",
+     "confidence": 0.9987,
+     "p_occupied": 0.0012588914776977052
+    },
+    {
+     "slot_id": "S3",
+     "pixels": {
+      "x": 226,
+      "y": 3,
+      "w": 58,
+      "h": 130
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9972,
+     "p_occupied": 0.9971680820866579
+    },
+    {
+     "slot_id": "S4",
+     "pixels": {
+      "x": 290,
+      "y": 3,
+      "w": 58,
+      "h": 130
+     },
+     "status": "OCCUPIED",
+     "confidence": 0.9978,
+     "p_occupied": 0.9978456634616814
+    },
+    {
+     "slot_id": "S5",
+     "pixels": {
+      "x": 354,
+      "y": 3,
+      "w": 59,
+      "h": 130
+     },
+     "status": "EMPTY",
+     "confidence": 0.9976,
+     "p_occupied": 0.00239298590532412
+    }
+   ],
+   "empty_slot_ids": [
+    "S2",
+    "S5"
+   ],
+   "first_crop_tensor_sha256": "7ce9509912e0305bdeb305f21368871db1e06af3c74d96944f805908706a4205",
+   "first_crop_tensor_head": [
+    0.14256364107131958,
+    0.1254388839006424,
+    0.1083141341805458,
+    0.1083141341805458,
+    0.1083141341805458,
+    0.09118937700986862,
+    0.07406462728977203,
+    0.0569397434592247
+   ],
+   "decoded_sha256": "64b5eca1de150d706bae6fcadcbb4a4b8851fdd2a508193290df065c17eed7b7"
+  }
+ ]
+}

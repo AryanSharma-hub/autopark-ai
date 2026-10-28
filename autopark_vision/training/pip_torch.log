@@ -1,0 +1,70 @@
+Using pip 26.1.2 from C:\Python314\Lib\site-packages\pip (python 3.14)
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://download.pytorch.org/whl/cpu, https://pypi.org/simple
+Collecting torch
+  Obtaining dependency information for torch from https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl.metadata
+  Using cached torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl.metadata (38 kB)
+Collecting torchvision
+  Obtaining dependency information for torchvision from https://download-r2.pytorch.org/whl/cpu/torchvision-0.29.1%2Bcpu-cp314-cp314-win_amd64.whl.metadata
+  Using cached torchvision-0.29.1%2Bcpu-cp314-cp314-win_amd64.whl.metadata (5.8 kB)
+Collecting onnx
+  Obtaining dependency information for onnx from https://files.pythonhosted.org/packages/38/ce/102fd4a0b2a6d111a9c86745e084c4c68c0ee020eaa359a03a8d43e4646f/onnx-1.23.2-cp312-abi3-win_amd64.whl.metadata
+  Using cached onnx-1.23.2-cp312-abi3-win_amd64.whl.metadata (8.7 kB)
+Collecting filelock (from torch)
+  Obtaining dependency information for filelock from https://files.pythonhosted.org/packages/e0/1b/5e74289a1878e666bb4b65fe5805a04cafcac2aa5f519ef1ead67ef91c56/filelock-4.2.4-py3-none-any.whl.metadata
+  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Requirement already satisfied: typing-extensions>=4.10.0 in C:\Users\User\AppData\Roaming\Python\Python314\site-packages (from torch) (4.16.0)
+Collecting setuptools>=77.0.3 (from torch)
+  Obtaining dependency information for setuptools>=77.0.3 from https://files.pythonhosted.org/packages/ef/55/6dc6d6bb953bdfc52519a0059592c52b6e3b8ad51cf8256dffceb55b0610/setuptools-84.2.1-py3-none-any.whl.metadata
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy>=1.13.3 (from torch)
+  Obtaining dependency information for sympy>=1.13.3 from https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl.metadata
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Requirement already satisfied: networkx>=2.5.1 in C:\Users\User\AppData\Roaming\Python\Python314\site-packages (from torch) (3.7)
+Requirement already satisfied: jinja2 in C:\Users\User\AppData\Roaming\Python\Python314\site-packages (from torch) (3.1.6)
+Collecting fsspec>=0.8.5 (from torch)
+  Obtaining dependency information for fsspec>=0.8.5 from https://files.pythonhosted.org/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl.metadata
+  Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: numpy in C:\Users\User\AppData\Roaming\Python\Python314\site-packages (from torchvision) (2.5.4)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in C:\Users\User\AppData\Roaming\Python\Python314\site-packages (from torchvision) (13.0.0)
+Requirement already satisfied: protobuf>=6.31.1 in C:\Users\User\AppData\Roaming\Python\Python314\site-packages (from onnx) (7.36.2)
+Collecting ml_dtypes>=0.5.4 (from onnx)
+  Obtaining dependency information for ml_dtypes>=0.5.4 from https://files.pythonhosted.org/packages/ff/ad/9c32c53f823dda3742df19a79c10bc198365937873ea125ba65747440c23/ml_dtypes-0.6.0-cp314-cp314-win_amd64.whl.metadata
+  Using cached ml_dtypes-0.6.0-cp314-cp314-win_amd64.whl.metadata (8.8 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch)
+  Obtaining dependency information for mpmath<1.4,>=1.1.0 from https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl.metadata
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in C:\Users\User\AppData\Roaming\Python\Python314\site-packages (from jinja2->torch) (3.0.4)
+Downloading torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl (125.9 MB)
+WARNING: Connection timed out while downloading.
+WARNING: Attempting to resume incomplete download (107.2 MB/125.9 MB, attempt 1)
+WARNING: Retrying (Retry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+WARNING: Retrying (Retry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+WARNING: Retrying (Retry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+WARNING: Retrying (Retry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+WARNING: Retrying (Retry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='download-r2.pytorch.org', port=443): Failed to resolve 'download-r2.pytorch.org' ([Errno 11001] getaddrinfo failed)")': /whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl
+Resuming download torch-2.14.1%2Bcpu-cp314-cp314-win_amd64.whl (107.2 MB/125.9 MB)
+Downloading torchvision-0.29.1%2Bcpu-cp314-cp314-win_amd64.whl (1.4 MB)
+Using cached onnx-1.23.2-cp312-abi3-win_amd64.whl (7.9 MB)
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Downloading ml_dtypes-0.6.0-cp314-cp314-win_amd64.whl (457 kB)
+Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+Installing collected packages: mpmath, sympy, setuptools, ml_dtypes, fsspec, filelock, torch, onnx, torchvision
+  WARNING: The script isympy.exe is installed in 'C:\Users\User\AppData\Roaming\Python\Python314\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts torchfrtrace.exe and torchrun.exe are installed in 'C:\Users\User\AppData\Roaming\Python\Python314\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts backend-test-tools.exe, check-model.exe and check-node.exe are installed in 'C:\Users\User\AppData\Roaming\Python\Python314\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed filelock-4.2.4 fsspec-2026.9.0 ml_dtypes-0.6.0 mpmath-1.3.0 onnx-1.23.2 setuptools-84.2.1 sympy-1.14.0 torch-2.14.1+cpu torchvision-0.29.1+cpu
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2.2
+[notice] To update, run: python.exe -m pip install --upgrade pip

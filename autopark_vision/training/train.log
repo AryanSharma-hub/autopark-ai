@@ -1,0 +1,66 @@
+train=18903 {('carpk', 'empty'): 6411, ('syn', 'empty'): 3277, ('carpk', 'occupied'): 5693, ('syn', 'occupied'): 3522}
+valid=6439 test=7754 device=cpu
+1.3%2.5%3.8%5.1%6.4%7.6%8.9%10.2%11.4%12.7%14.0%15.3%16.5%17.8%19.1%20.3%21.6%22.9%24.2%25.4%26.7%28.0%29.2%30.5%31.8%33.1%34.3%35.6%36.9%38.2%39.4%40.7%42.0%43.2%44.5%45.8%47.1%48.3%49.6%50.9%52.1%53.4%54.7%56.0%57.2%58.5%59.8%61.0%62.3%63.6%64.9%66.1%67.4%68.7%69.9%71.2%72.5%73.8%75.0%76.3%77.6%78.8%80.1%81.4%82.7%83.9%85.2%86.5%87.7%89.0%90.3%91.6%92.8%94.1%95.4%96.7%97.9%99.2%100.0%
+C:\Users\User\Documents\Embed\autopark_vision\training\train.py:224: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  running += float(loss) * len(y)
+Downloading: "https://download.pytorch.org/models/mobilenet_v3_small-047dcff4.pth" to C:\Users\User/.cache\torch\hub\checkpoints\mobilenet_v3_small-047dcff4.pth
+epoch  1/4 train_loss=0.1893 train_acc=0.9676 valid_loss=0.0939 valid_acc=0.9727 (210s)
+epoch  2/4 train_loss=0.1414 train_acc=0.9909 valid_loss=0.0532 valid_acc=0.9899 (102s)
+epoch  3/4 train_loss=0.1379 train_acc=0.9920 valid_loss=0.0581 valid_acc=0.9915 (99s)
+epoch  4/4 train_loss=0.1347 train_acc=0.9931 valid_loss=0.0482 valid_acc=0.9932 (101s)
+best_epoch=4 temperature=0.590 threshold=0.9875
+valid: {"n": 6439, "accuracy_no_abstain": 0.9932, "coverage": 0.946, "errors_when_decided": 14, "empty": {"precision": 1.0, "recall": 0.9353, "support": 3476}, "occupied": {"precision": 0.9951, "recall": 0.9538, "support": 2963}}
+test:  {
+ "all": {
+  "n": 7754,
+  "accuracy_no_abstain": 0.9805,
+  "coverage": 0.9279,
+  "errors_when_decided": 19,
+  "empty": {
+   "precision": 0.9994,
+   "recall": 0.8891,
+   "support": 4039
+  },
+  "occupied": {
+   "precision": 0.9953,
+   "recall": 0.965,
+   "support": 3715
+  }
+ },
+ "carpk": {
+  "n": 6439,
+  "accuracy_no_abstain": 0.979,
+  "coverage": 0.9267,
+  "errors_when_decided": 14,
+  "empty": {
+   "precision": 0.9997,
+   "recall": 0.8751,
+   "support": 3426
+  },
+  "occupied": {
+   "precision": 0.9956,
+   "recall": 0.9808,
+   "support": 3013
+  }
+ },
+ "syn": {
+  "n": 1315,
+  "accuracy_no_abstain": 0.9878,
+  "coverage": 0.9338,
+  "errors_when_decided": 5,
+  "empty": {
+   "precision": 0.9983,
+   "recall": 0.9674,
+   "support": 613
+  },
+  "occupied": {
+   "precision": 0.9937,
+   "recall": 0.8974,
+   "support": 702
+  }
+ }
+}
+C:\Users\User\Documents\Embed\autopark_vision\training\train.py:154: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter has become the default. Learn more about the new export logic: https://docs.pytorch.org/docs/stable/onnx_export.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html
+  torch.onnx.export(
+wrote C:\Users\User\Documents\Embed\autopark_vision\models\slot_classifier.onnx and C:\Users\User\Documents\Embed\autopark_vision\models\slot_classifier.json

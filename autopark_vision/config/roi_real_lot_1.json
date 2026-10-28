@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "layout_name": "real_lot_1_top_row",
+  "placeholder": false,
+  "reference_resolution": {
+    "width": 548,
+    "height": 300
+  },
+  "aspect_ratio_tolerance": 0.15,
+  "slots": [
+    {"id": "S1", "x": 0.177, "y": 0.01, "w": 0.108, "h": 0.433},
+    {"id": "S2", "x": 0.2956, "y": 0.01, "w": 0.1058, "h": 0.433},
+    {"id": "S3", "x": 0.4124, "y": 0.01, "w": 0.1058, "h": 0.433},
+    {"id": "S4", "x": 0.5292, "y": 0.01, "w": 0.1058, "h": 0.433},
+    {"id": "S5", "x": 0.646, "y": 0.01, "w": 0.1077, "h": 0.433}
+  ]
+}
